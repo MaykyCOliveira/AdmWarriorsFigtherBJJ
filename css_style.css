@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+  color: #333;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #007BFF;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navigation Links */
+.nav-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  color: #007BFF;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Input and Form Elements */
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.input-container label {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input,
+.input-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Buttons */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #007BFF;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Responsive Table */
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Search Container */
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Feedback */
+.feedback {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Month Selector (para ficha de frequência) */
+.month-selector {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+
+
+
+/* Ajustes na tabela da lista de registros */
+#tabela-registro th, 
+#tabela-registro td {
+  padding: 12px; /* Aumenta o espaço interno */
+  text-align: left;
+  word-wrap: break-word; /* Garante que o texto não transborde */
+}
+
+/* Define larguras mínimas para colunas específicas */
+#tabela-registro th:nth-child(1), /* Nome */
+#tabela-registro td:nth-child(1) {
+  min-width: 300px; /* Mais espaço para nomes longos */
+}
+
+#tabela-registro th:nth-child(4), /* Telefone */
+#tabela-registro td:nth-child(4) {
+  min-width: 130px; /* Mais espaço para números de telefone */
+}
+/* Define larguras mínimas para colunas específicas */
+#tabela-registro th:nth-child(6), /* Nome */
+#tabela-registro td:nth-child(6) {
+  min-width: 200px; /* Mais espaço para nomes longos */
+}
+
+#tabela-registro th:nth-child(7), /* CPF */
+#tabela-registro td:nth-child(7) {
+  min-width: 150px; /* Ajusta a largura do CPF */
+}
+
+#tabela-registro th:nth-child(10), /* CPF */
+#tabela-registro td:nth-child(10) {
+  min-width: 250px; /* Ajusta a largura do CPF */
+}
+
+/* Ajuste da largura do Endereço */
+#tabela-registro th:last-child, /* Última coluna (Endereço) */
+#tabela-registro td.endereco-coluna {
+  min-width: 150px; /* Define o dobro da largura original */
+  max-width: 400px; /* Evita que fique muito esticado */
+  word-wrap: break-word;
+}
+
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 100px; /* Tamanho máximo; ajuste conforme necessário */
+  height: auto;
+}
+
+
