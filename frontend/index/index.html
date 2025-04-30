@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro de Alunos - Warriors Figther</title>
+  <link rel="stylesheet" href="../../css_style.css">
+</head>
+<body>
+    
+  <div class="container">
+    <div class="logo-container">
+      <img src="../../imagens/logo_warriors.png" alt="Logo do Projeto" class="logo">
+    </div>
+      
+    <h2>Formulário de Cadastro de Alunos</h2>
+      <div class="nav-links">
+      <a href="../contribuicoes/contribuicoes.html">Registro de Contribuições</a> | 
+      <a href="../ficha_frequencia/ficha_frequencia.html">Ficha de Frequência</a> | 
+      <a href="../lista_registro/lista_registro.html">Dados dos Alunos</a>
+    </div>
+
+    <br><br>
+    <div class="input-container">
+      <label>
+        Nome do aluno:
+        <input type="text" id="nome" placeholder="Nome do aluno">
+      </label>
+      <label>
+        Cor da Faixa:
+        <select id="faixa">
+          <option value="" disabled selected>Selecione a Faixa</option>
+          <option value="Branca">Branca</option>
+          <option value="Cinza">Cinza</option>
+          <option value="Amarela">Amarela</option>
+          <option value="Laranja">Laranja</option>
+          <option value="Verde">Verde</option>
+          <option value="Azul">Azul</option>
+          <option value="Roxa">Roxa</option>
+          <option value="Marrom">Marrom</option>
+          <option value="Preta">Preta</option>
+        </select>
+      </label>
+      <label>
+        Grau:
+        <input type="number" id="grau" min="0" max="4" placeholder="Grau">
+      </label>
+      <label>
+        Telefone:
+        <input type="text" id="telefone" placeholder="Telefone">
+      </label>
+      <label>
+        Email:
+        <input type="email" id="email" placeholder="Email">
+      </label>
+      <label>
+        Endereço:
+        <input type="text" id="endereco" placeholder="Endereço (Rua, Número, Bairro, Cidade, Estado)">
+      </label>
+      <label>
+        RG:
+        <input type="text" id="rg" placeholder="RG">
+      </label>
+      <label>
+        CPF:
+        <input type="text" id="cpf" placeholder="CPF">
+      </label>
+      <label>
+        Data de Nascimento:
+        <input type="date" id="data-nascimento">
+      </label>
+      <label>
+        Nome do Responsável:
+        <input type="text" id="nome-responsavel" placeholder="Nome do Responsável (se menor de 18 anos)">
+      </label>
+      <label>
+        CPF do Responsável:
+        <input type="text" id="cpf-responsavel" placeholder="CPF do Responsável (se menor de 18 anos)">
+      </label>
+    </div>
+    <button onclick="adicionarAluno()">Adicionar Aluno</button>
+    <div class="feedback" id="feedback"></div>
+
+  </div>
+  <script src="./js_formulario.js"></script>
+</body>
+</html>
